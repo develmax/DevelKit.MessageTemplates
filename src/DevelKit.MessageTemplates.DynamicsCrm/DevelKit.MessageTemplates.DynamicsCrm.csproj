@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net452</TargetFramework>
+    <Description>Dynamics CRM 2015 SDK adapter for DevelKit.MessageTemplates. Uses IOrganizationService, without SQL generation.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../DevelKit.MessageTemplates/DevelKit.MessageTemplates.csproj" />
+    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="7.0.0.1" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <None Include="../../docs/dynamics-crm.md" Pack="true" PackagePath="/README.md" />
+  </ItemGroup>
+</Project>

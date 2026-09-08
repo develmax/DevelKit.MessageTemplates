@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><TargetFrameworks>net452;net10.0</TargetFrameworks></PropertyGroup>
+  <PropertyGroup>
+    <Description>Message template parser, formatter, aliases and provider-neutral query planning.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup><None Include="../../README.md" Pack="true" PackagePath="/" /></ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+artifacts/
+.vs/
+
+articles/
+research-private/
+*.user
+*.suo
+.env
+.env.*

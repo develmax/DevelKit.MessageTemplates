@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="samples/CrmMeetings/CrmMeetings.csproj" />
+    <Project Path="samples/Meetings/Meetings.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/DevelKit.MessageTemplates.DynamicsCrm/DevelKit.MessageTemplates.DynamicsCrm.csproj" />
+    <Project Path="src/DevelKit.MessageTemplates.SqlServer/DevelKit.MessageTemplates.SqlServer.csproj" />
+    <Project Path="src/DevelKit.MessageTemplates/DevelKit.MessageTemplates.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/DynamicsCrm.Regression/DynamicsCrm.Regression.csproj" />
+    <Project Path="tests/Regression/Regression.csproj" />
+  </Folder>
+</Solution>

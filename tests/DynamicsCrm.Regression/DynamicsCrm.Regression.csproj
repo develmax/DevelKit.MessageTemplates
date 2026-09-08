@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net452</TargetFramework><OutputType>Exe</OutputType><IsPackable>false</IsPackable><AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/DevelKit.MessageTemplates.DynamicsCrm/DevelKit.MessageTemplates.DynamicsCrm.csproj" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+</Project>
