@@ -13,10 +13,12 @@
     <RepositoryUrl>https://github.com/develmax/DevelKit.MessageTemplates</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/develmax/DevelKit.MessageTemplates</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
     <PackageTags>templates;messages;sms;email;crm;sqlserver</PackageTags>
-    <Version>0.1.0-preview.3</Version>
+    <Version>0.1.0</Version>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)assets/icon.png" Pack="true" PackagePath="/icon.png" />
     <None Include="$(MSBuildThisFileDirectory)LICENSE" Pack="true" PackagePath="/" />
   </ItemGroup>
 </Project>

@@ -20,7 +20,7 @@
 
 ```powershell
 dotnet nuget add source "<absolute-path-to-artifacts>" --name DevelKitLocal
-dotnet add package DevelKit.MessageTemplates.SqlServer --version 0.1.0-preview.3
+dotnet add package DevelKit.MessageTemplates.SqlServer --version 0.1.0
 ```
 
 Для CRM используйте DevelKit.MessageTemplates.DynamicsCrm в проекте net452. Ядро приходит транзитивно. Доступ к nuget.org нужен для восстановления Microsoft.CrmSdk.CoreAssemblies.

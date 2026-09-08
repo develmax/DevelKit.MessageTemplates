@@ -20,7 +20,7 @@ After building, register the absolute artifacts path in your consuming project:
 
 ```powershell
 dotnet nuget add source "<absolute-path-to-artifacts>" --name DevelKitLocal
-dotnet add package DevelKit.MessageTemplates.SqlServer --version 0.1.0-preview.3
+dotnet add package DevelKit.MessageTemplates.SqlServer --version 0.1.0
 ```
 
 For CRM, use DevelKit.MessageTemplates.DynamicsCrm in a net452 project. The core is a transitive dependency. Access to nuget.org is required to restore Microsoft.CrmSdk.CoreAssemblies.

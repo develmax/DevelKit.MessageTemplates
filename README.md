@@ -1,13 +1,15 @@
+<img src="https://raw.githubusercontent.com/develmax/DevelKit.MessageTemplates/main/assets/logo.png" alt="DevelKit.MessageTemplates icon" width="96" height="96" />
+
 # DevelKit.MessageTemplates
 
 **Русский** | [English](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/README.en.md)
 
 Шаблонизатор сообщений для .NET: поля сущностей, переходы по связям, условия, форматы .NET и каталог именованных параметров. Подходит для SMS, email, push и других текстовых уведомлений. Библиотека подготавливает текст. Отправку и правила конкретного канала реализует приложение.
 
-[![Version: 0.1.0-preview.3](https://img.shields.io/badge/version-0.1.0--preview.3-orange)](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/Directory.Build.props)
+[![Version: 0.1.0](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/Directory.Build.props)
 [![Build and tests](https://github.com/develmax/DevelKit.MessageTemplates/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/develmax/DevelKit.MessageTemplates/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/github/license/develmax/DevelKit.MessageTemplates)](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/LICENSE)
-[![NuGet packages: CI artifacts](https://img.shields.io/badge/NuGet_packages-CI_artifacts-004880)](https://github.com/develmax/DevelKit.MessageTemplates/actions/workflows/build.yml)
+[![NuGet](https://img.shields.io/nuget/vpre/DevelKit.MessageTemplates)](https://www.nuget.org/packages/DevelKit.MessageTemplates)
 
 [![.NET 10.0](https://img.shields.io/badge/.NET-10.0-512BD4)](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/src/DevelKit.MessageTemplates/DevelKit.MessageTemplates.csproj)
 [![.NET Framework 4.5.2](https://img.shields.io/badge/.NET_Framework-4.5.2-512BD4)](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/docs/compatibility.md)
@@ -19,11 +21,11 @@
 
 | Пакет | Платформа | Назначение |
 | --- | --- | --- |
-| DevelKit.MessageTemplates | net452; net10.0 | Парсер, форматтер, каталог параметров, кеш и независимый план чтения |
-| DevelKit.MessageTemplates.DynamicsCrm | net452 | Адаптер Dynamics CRM 2015 SDK 7.0.0.1 |
-| DevelKit.MessageTemplates.SqlServer | net10.0 | Генерация SQL Server и параметризованного DbCommand |
+| [DevelKit.MessageTemplates](https://www.nuget.org/packages/DevelKit.MessageTemplates) | net452; net10.0 | Парсер, форматтер, каталог параметров, кеш и независимый план чтения |
+| [DevelKit.MessageTemplates.DynamicsCrm](https://www.nuget.org/packages/DevelKit.MessageTemplates.DynamicsCrm) | net452 | Адаптер Dynamics CRM 2015 SDK 7.0.0.1 |
+| [DevelKit.MessageTemplates.SqlServer](https://www.nuget.org/packages/DevelKit.MessageTemplates.SqlServer) | net10.0 | Генерация SQL Server и параметризованного DbCommand |
 
-Адаптеры зависят от ядра и подключаются отдельно. Ядро не имеет внешних runtime-зависимостей. Текущая версия: **0.1.0-preview.3**. Публичная публикация в NuGet пока не выполнена. Пакеты можно собрать из исходников и подключить из локального источника.
+Адаптеры зависят от ядра и подключаются отдельно. Ядро не имеет внешних runtime-зависимостей. Текущая версия: **0.1.0**. Пакеты уже доступны на NuGet.org по ссылкам в таблице выше. Стабильная версия 0.1.0 подготовлена в исходниках и локальных пакетах. До её отдельной публикации на NuGet.org доступна 0.1.0-preview.3.
 
 ## Быстрый пример без базы
 

@@ -1,13 +1,15 @@
+<img src="https://raw.githubusercontent.com/develmax/DevelKit.MessageTemplates/main/assets/logo.png" alt="DevelKit.MessageTemplates icon" width="96" height="96" />
+
 # DevelKit.MessageTemplates
 
 [Русский](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/README.md) | **English**
 
 A .NET message templating library with entity fields, relationships, conditions, .NET formatting, and named parameters. Use it to prepare SMS, email, push notifications, or other text messages. Your application handles delivery and channel-specific rules.
 
-[![Version: 0.1.0-preview.3](https://img.shields.io/badge/version-0.1.0--preview.3-orange)](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/Directory.Build.props)
+[![Version: 0.1.0](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/Directory.Build.props)
 [![Build and tests](https://github.com/develmax/DevelKit.MessageTemplates/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/develmax/DevelKit.MessageTemplates/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/github/license/develmax/DevelKit.MessageTemplates)](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/LICENSE)
-[![NuGet packages: CI artifacts](https://img.shields.io/badge/NuGet_packages-CI_artifacts-004880)](https://github.com/develmax/DevelKit.MessageTemplates/actions/workflows/build.yml)
+[![NuGet](https://img.shields.io/nuget/vpre/DevelKit.MessageTemplates)](https://www.nuget.org/packages/DevelKit.MessageTemplates)
 
 [![.NET 10.0](https://img.shields.io/badge/.NET-10.0-512BD4)](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/src/DevelKit.MessageTemplates/DevelKit.MessageTemplates.csproj)
 [![.NET Framework 4.5.2](https://img.shields.io/badge/.NET_Framework-4.5.2-512BD4)](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/docs/en/compatibility.md)
@@ -19,11 +21,11 @@ A .NET message templating library with entity fields, relationships, conditions,
 
 | Package | Target frameworks | Purpose |
 | --- | --- | --- |
-| DevelKit.MessageTemplates | net452; net10.0 | Parser, formatter, parameter catalog, cache, and provider-independent query planning |
-| DevelKit.MessageTemplates.DynamicsCrm | net452 | Dynamics CRM 2015 SDK 7.0.0.1 adapter |
-| DevelKit.MessageTemplates.SqlServer | net10.0 | SQL Server generation and parameterized DbCommand creation |
+| [DevelKit.MessageTemplates](https://www.nuget.org/packages/DevelKit.MessageTemplates) | net452; net10.0 | Parser, formatter, parameter catalog, cache, and provider-independent query planning |
+| [DevelKit.MessageTemplates.DynamicsCrm](https://www.nuget.org/packages/DevelKit.MessageTemplates.DynamicsCrm) | net452 | Dynamics CRM 2015 SDK 7.0.0.1 adapter |
+| [DevelKit.MessageTemplates.SqlServer](https://www.nuget.org/packages/DevelKit.MessageTemplates.SqlServer) | net10.0 | SQL Server generation and parameterized DbCommand creation |
 
-Each adapter depends on the core and can be installed separately. The core has no external runtime dependencies. Current version: **0.1.0-preview.3**. Packages have not been published to NuGet.org yet. Build them from source and install them from a local feed.
+Each adapter depends on the core and can be installed separately. The core has no external runtime dependencies. Current version: **0.1.0**. Packages are available on NuGet.org using the links in the table above. Stable version 0.1.0 is prepared in source and local packages. Until it is published separately, NuGet.org provides 0.1.0-preview.3.
 
 ## Quick start without a database
 
