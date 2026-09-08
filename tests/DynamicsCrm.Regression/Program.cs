@@ -164,10 +164,39 @@ await CheckAsync("missing alias name is rejected", async () =>
     try { await repo.LoadAsync(default); } catch (FormatException) { return; }
     throw new Exception("Format failure expected");
 });
+await CheckAsync("CRM metadata drives preparation before if", async () =>
+{
+    var metadataRequests = 0;
+    var fake = new FakeService(_ => Rows(new Entity("contact")
+    {
+        ["statuscode"] = new OptionSetValue(1),
+        ["fullname"] = "Анна",
+        ["nickname"] = "UNKNOWN"
+    }), request =>
+    {
+        metadataRequests++;
+        var attribute = (Microsoft.Xrm.Sdk.Messages.RetrieveAttributeRequest)request;
+        var response = new Microsoft.Xrm.Sdk.Messages.RetrieveAttributeResponse();
+        response.Results["AttributeMetadata"] = attribute.LogicalName == "statuscode"
+            ? (Microsoft.Xrm.Sdk.Metadata.AttributeMetadata)new Microsoft.Xrm.Sdk.Metadata.StatusAttributeMetadata()
+            : new Microsoft.Xrm.Sdk.Metadata.StringAttributeMetadata();
+        return response;
+    });
+    var rules = new CrmTemplateValueMetadataProvider(fake, (field, rule) =>
+        field.Field == "nickname" ? rule with { NullSentinel = "UNKNOWN" } : rule);
+    var schema = new TemplateSchema().AddEntity("contact", "contactid", "statuscode", "fullname", "nickname");
+    var engine = new TemplateEngine(schema,
+        new PreparingTemplateDataProvider(new CrmTemplateDataProvider(fake), rules, schema));
+    var targets = new Dictionary<string, object> { ["contact"] = Guid.NewGuid() };
+    Equal("Анна", await engine.RenderAsync("{{contact:if[[statuscode = 1 ? fullname ; nickname]]}}", targets));
+    Equal("", await engine.RenderAsync("{{contact:nickname}}", targets));
+    Equal(4, metadataRequests);
+    Equal(2, fake.Reads);
+});
 Console.WriteLine($"Passed {count} CRM regression checks.");
 static EntityCollection Rows(params Entity[] entities) => new(new List<Entity>(entities));
 
-sealed class FakeService(Func<Crm.QueryExpression, EntityCollection> read) : IOrganizationService
+sealed class FakeService(Func<Crm.QueryExpression, EntityCollection> read, Func<OrganizationRequest, OrganizationResponse>? execute = null) : IOrganizationService
 {
     public int Reads { get; private set; }
     public EntityCollection RetrieveMultiple(Crm.QueryBase query) { Reads++; return read((Crm.QueryExpression)query); }
@@ -175,7 +204,7 @@ sealed class FakeService(Func<Crm.QueryExpression, EntityCollection> read) : IOr
     public void Update(Entity entity) => throw new NotSupportedException();
     public void Delete(string entityName, Guid id) => throw new NotSupportedException();
     public Entity Retrieve(string entityName, Guid id, Crm.ColumnSet columns) => throw new NotSupportedException();
-    public OrganizationResponse Execute(OrganizationRequest request) => throw new NotSupportedException();
+    public OrganizationResponse Execute(OrganizationRequest request) => execute is null ? throw new NotSupportedException() : execute(request);
     public void Associate(string entityName, Guid id, Relationship relationship, EntityReferenceCollection relatedEntities) => throw new NotSupportedException();
     public void Disassociate(string entityName, Guid id, Relationship relationship, EntityReferenceCollection relatedEntities) => throw new NotSupportedException();
 }

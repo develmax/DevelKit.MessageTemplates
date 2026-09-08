@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/DevelKit.MessageTemplates/DevelKit.MessageTemplates.csproj" />
+    <ProjectReference Include="../../src/DevelKit.MessageTemplates.SqlServer/DevelKit.MessageTemplates.SqlServer.csproj" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.2" />
+  </ItemGroup>
+</Project>

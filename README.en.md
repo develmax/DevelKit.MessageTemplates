@@ -91,11 +91,13 @@ The script builds the solution in Release, runs the core, SQL, and CRM checks, r
 - [Building and releasing packages](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/docs/en/release.md).
 - [Contributing](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/CONTRIBUTING.en.md).
 
+Complete SQL scenario: [NotificationFlow](samples/NotificationFlow/README.en.md). [Preparing types and time values before formatting](docs/en/value-preparation.md).
+
 ## Scope and limitations
 
 Templates access data within the schema allowed by your application. SQL identifier validation does not replace access control. SQL values are passed through DbParameter. Both branches of an if expression are loaded before the formatter selects a result.
 
-Parsing is permissive: unrecognized fragments may remain literal text. Your application supplies HTML encoding, length limits, SMS cost rules, and time zone handling. Query plans return a single row and do not support collection loops. Automated checks do not cover live CRM or SQL Server instances, the CRM plugin sandbox, or modern Dataverse.
+Parsing is permissive: unrecognized fragments may remain literal text. Your application supplies HTML encoding, length limits, SMS cost rules, and time zone handling. Query plans return a single row and do not support collection loops. Core regression checks require no servers. The separate NotificationFlow sample executes SQL Server queries and verifies rendered messages. Live CRM, the CRM plugin sandbox, and modern Dataverse have not been validated.
 
 ## License
 

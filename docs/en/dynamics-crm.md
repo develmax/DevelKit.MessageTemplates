@@ -34,7 +34,7 @@ For aliases, use CrmTemplateAliasRepository with the entity and field names of y
 ## Limitations
 
 - The CRM 2015 SDK is synchronous. ReadAsync implements the core contract, but the network call remains synchronous. Cancellation is checked before and after the call and does not interrupt a request already in progress.
-- Checks use a fake IOrganizationService and actual SDK types. Live connections and the plugin sandbox have not been verified.
+- Checks use a fake IOrganizationService and actual SDK types. Connections to a CRM server and execution in the plugin sandbox have not been verified.
 - This is an application library, not a registered CRM plugin. Plugin assembly signing and deployment have not been performed.
 - Modern Dataverse ServiceClient is not included.
 - Configure the schema before concurrent use.

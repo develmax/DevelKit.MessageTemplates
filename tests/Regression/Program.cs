@@ -126,7 +126,8 @@ await CheckAsync("cache TTL", async () =>
     await cache.ExpandAsync("{{x:a}}");
     Equal(2, repository.Calls);
 });
-Console.WriteLine($"Passed {passed} regression checks.");
+await PreparationChecks.RunAsync();
+Console.WriteLine($"Passed {passed} existing regression checks.");
 
 sealed class TestMetadata : IQueryMetadata
 {
