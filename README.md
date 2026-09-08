@@ -2,8 +2,16 @@
 
 Шаблонизатор сообщений для .NET: поля сущностей, переходы по связям, условия, форматы .NET и каталог именованных параметров. Подходит для SMS, email, push и других текстовых уведомлений. Библиотека подготавливает текст. Отправку и правила конкретного канала реализует приложение.
 
-[![Build](https://github.com/develmax/DevelKit.MessageTemplates/actions/workflows/build.yml/badge.svg)](https://github.com/develmax/DevelKit.MessageTemplates/actions/workflows/build.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/LICENSE)
+[![Version: 0.1.0-preview.3](https://img.shields.io/badge/version-0.1.0--preview.3-orange)](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/Directory.Build.props)
+[![Build and tests](https://github.com/develmax/DevelKit.MessageTemplates/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/develmax/DevelKit.MessageTemplates/actions/workflows/build.yml)
+[![License: MIT](https://img.shields.io/github/license/develmax/DevelKit.MessageTemplates)](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/LICENSE)
+[![NuGet packages: CI artifacts](https://img.shields.io/badge/NuGet_packages-CI_artifacts-004880)](https://github.com/develmax/DevelKit.MessageTemplates/actions/workflows/build.yml)
+
+[![.NET 10.0](https://img.shields.io/badge/.NET-10.0-512BD4)](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/src/DevelKit.MessageTemplates/DevelKit.MessageTemplates.csproj)
+[![.NET Framework 4.5.2](https://img.shields.io/badge/.NET_Framework-4.5.2-512BD4)](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/docs/compatibility.md)
+[![Dynamics CRM 2015](https://img.shields.io/badge/Dynamics_CRM-2015-0078D4)](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/docs/dynamics-crm.md)
+[![SQL Server](https://img.shields.io/badge/database-SQL_Server-CC2927)](https://github.com/develmax/DevelKit.MessageTemplates/tree/main/src/DevelKit.MessageTemplates.SqlServer)
+[![Docs: Русский](https://img.shields.io/badge/docs-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-blue)](https://github.com/develmax/DevelKit.MessageTemplates/tree/main/docs)
 
 ## Пакеты
 
