@@ -1,5 +1,7 @@
 # Как читать код шаблонизатора
 
+**Русский** | [English](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/docs/en/code-guide.md)
+
 Начните с [примера без базы](../samples/Meetings/Program.cs) или [примера CRM SDK](../samples/CrmMeetings/Program.cs). Затем откройте TemplateEngine.RenderAsync: в нём видна вся последовательность подготовки текста.
 
 ## Основной путь

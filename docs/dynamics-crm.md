@@ -1,5 +1,7 @@
 # DevelKit.MessageTemplates.DynamicsCrm
 
+**Русский** | [English](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/docs/en/dynamics-crm.md)
+
 Адаптер Dynamics CRM 2015: .NET Framework 4.5.2, Microsoft.CrmSdk.CoreAssemblies 7.0.0.1. Это отдельный проект и пакет; SQL Server ему не нужен.
 
 ## Подключение

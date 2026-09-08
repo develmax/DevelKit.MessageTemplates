@@ -1,5 +1,7 @@
 # Поведение и совместимость
 
+**Русский** | [English](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/docs/en/compatibility.md)
+
 ## Основное поведение
 
 - Синтаксис {{entity:field}}, {{entity:field(format)}} и {{entity:relation{{other:field}}}}.

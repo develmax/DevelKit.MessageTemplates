@@ -1,5 +1,7 @@
 # Сборка и выпуск
 
+**Русский** | [English](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/docs/en/release.md)
+
 ## Локальная проверка
 
 На Windows установите PowerShell 7, .NET SDK 10 и .NET Framework 4.8, затем выполните из корня репозитория:

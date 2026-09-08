@@ -1,5 +1,7 @@
 # Синтаксис и обработка
 
+**Русский** | [English](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/docs/en/syntax.md)
+
 ## Параметры
 
 ```text
