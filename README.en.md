@@ -99,6 +99,13 @@ Templates access data within the schema allowed by your application. SQL identif
 
 Parsing is permissive: unrecognized fragments may remain literal text. Your application supplies HTML encoding, length limits, SMS cost rules, and time zone handling. Query plans return a single row and do not support collection loops. Core regression checks require no servers. The separate NotificationFlow sample executes SQL Server queries and verifies rendered messages. Live CRM, the CRM plugin sandbox, and modern Dataverse have not been validated.
 
+## Support development
+
+If this library helps you, you can support its maintenance, tests, and documentation.
+Donations are optional; the library remains freely available under the MIT license.
+
+[Patreon](https://www.patreon.com/develmax) · [Boosty](https://boosty.to/develmax/donate) · [YooMoney](https://yoomoney.ru/to/4100119529133322) · [PayPal](https://paypal.me/develmax)
+
 ## License
 
 [MIT](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/LICENSE).

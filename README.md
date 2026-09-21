@@ -99,6 +99,13 @@ var expanded = TemplateAliases.Expand("Ждём вас {{meeting:date}}.", alias
 
 Парсер мягкий: нераспознанные фрагменты могут остаться текстом. HTML-кодирование, лимиты длины, стоимость SMS и часовые пояса задаёт приложение. План рассчитан на одну строку данных, без циклов по коллекциям. Основные регрессионные проверки не требуют серверов. Отдельный NotificationFlow выполняет запросы к SQL Server и проверяет готовый текст. Подключение к рабочей CRM, выполнение в CRM plugin sandbox и современный Dataverse не проверены.
 
+## Поддержать разработку
+
+Если библиотека вам полезна, вы можете поддержать её развитие, тестирование и документацию.
+Донаты добровольны; библиотека остаётся свободно доступной по лицензии MIT.
+
+[Patreon](https://www.patreon.com/develmax) · [Boosty](https://boosty.to/develmax/donate) · [YooMoney](https://yoomoney.ru/to/4100119529133322) · [PayPal](https://paypal.me/develmax)
+
 ## Лицензия
 
 [MIT](https://github.com/develmax/DevelKit.MessageTemplates/blob/main/LICENSE).
